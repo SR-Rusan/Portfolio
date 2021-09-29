@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+
+.darkmode {
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: var(--primary-color);
+    font-family: sans-serif;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: auto; */
+    padding: 10px 0;
+    margin: 0 50px;
+}
+
+.menu {
+    bottom: 100px;
+    position: relative;
+    margin-right: 60px;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.menu ul li a:hover {
+    color: #ff4321;
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 38px;
+}
+
+.logo {
+    width: 310px;
+    position: relative;
+    bottom: 57px;
+    cursor: pointer;
+    margin-left: 35px;
+}
+
+.info {
+    margin-left: 8%;
+    margin-top: 5%;
+}
+
+.info h1 {
+    font-size: 70px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.info span {
+    color: #ff4321;
+}
+
+.info p {
+    line-height: 22px;
+    color: var(--secondary-color);
+}
+
+.info a {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 18px;
+    text-decoration: none;
+    margin: 30px 0;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.info a:hover {
+    background: #ff8772;
+}
+
+.imgbox {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.imgbox img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.imgbox:hover .pattern {
+    bottom: 40px;
+}
+
+.imgbox:hover .subject {
+    left: 54%;
+}
+
+.sicon {
+    margin-left: 8%;
+    margin-top: 100px;
+}
+
+.sicon a {
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin-right: 20px;
+}
+
+.sicon a:hover {
+    color: #ff4321;
+}
